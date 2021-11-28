@@ -1,0 +1,133 @@
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  background-color: #393b39;
+}
+
+
+/*Nav bar css */
+/*-----------------------*/
+.container {
+  width: 100%;
+  margin: 0 ;
+}
+
+header {
+  position: fixed;
+  background: #ffe;
+  width: 100%;
+
+}
+
+/*fix container with float right and left*/
+header::after {
+  position: fixed;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  padding-right: 20px;
+  margin: 0 100px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li{
+  display: inline-block;
+  margin-left: 60px;
+  padding-top: 40px;
+  position: relative;
+}
+
+.logo {
+  width: 100px;
+  margin-left: 70px;
+  float: left;
+  padding: 10px 0;
+
+}
+
+nav a {
+  color: #000;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 6px;
+  position: absolute;
+  top: 0;
+  width: 0%;
+  background-color: #000;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+/*-----------------------*/
+/*Curved div*/
+
+.curve {
+  background-color: #3f3963;
+  color: #2f302f;
+  text-align: center;
+}
+
+.curve h1 {
+  margin-top: 12%;
+  font-size: 50px
+}
+
+.curve svg {
+  display: block;
+}
+
+/*-----------------------*/
+/*page*/
+.paragraph_one {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    font-size: 130%;
+    padding-top: 5%;
+    background-color: #393b39;
+    padding-bottom: 5%;
+}
+.paragraph_two{
+  padding-top: 10%;
+  align-items: center;
+}
+.paragraph_two p{
+  padding-left: 2%
+}
+.paragraph_two h2{
+  font-size: 130%;
+  padding-bottom: 5%;
+  padding-left: 2%;
+}
+/*tableau p1*/
+.table_1{
+  padding-left: 5%;
+}
+.one{
+  text-align: center;
+  padding-left: 2%;
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+  table-layout: fixed;
+  width: 50%;
+}
+td,th{
+  border:1px solid black;
+}

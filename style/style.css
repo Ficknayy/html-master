@@ -1,0 +1,148 @@
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+
+/*Nav bar css */
+/*-----------------------*/
+.container {
+  width: 100%;
+  margin: 0 ;
+}
+
+header {
+  position: fixed;
+  background: #ffe;
+  width: 100%;
+
+}
+
+/*fix container with float right and left*/
+header::after {
+  position: fixed;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  padding-right: 20px;
+  margin: 0 100px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li{
+  display: inline-block;
+  margin-left: 60px;
+  padding-top: 40px;
+  position: relative;
+}
+
+.logo {
+  width: 100px;
+  margin-left: 70px;
+  float: left;
+  padding: 10px 0;
+
+}
+
+nav a {
+  color: #000;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 6px;
+  position: absolute;
+  top: 0;
+  width: 0%;
+  background-color: #000;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+/*-----------------------*/
+/*Curved div*/
+
+.curve {
+  background-color: #3f3963;
+  color: #2f302f;
+  text-align: center;
+}
+
+.curve h1 {
+  margin-top: 12%;
+  font-size: 50px
+}
+
+.curve svg {
+  display: block;
+}
+
+/*-----------------------*/
+/*Home page wrapper*/
+
+.wrapper_one {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    font-size: 130%;
+    padding-top: 5%;
+    background-color: #393b39;
+    padding-bottom: 2%;
+}
+/*Divide wrapper in 2 parts*/
+.left-one {
+  padding-left: 15%;
+  padding-right: 2%;
+  margin-right: 25px;
+}
+/*Left part of wrapper*/
+.right-one {
+  padding-right: 10%;
+  padding-left: 2%;
+  text-align: justify;
+  margin-right: 20%;
+}
+/*Right part of wrapper*/
+
+.img-one{
+  width: 60%;
+  float: right;
+}
+/*picture in wapper*/
+
+
+.wrapper_two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  text-align: justify;
+  font-size: 135%;
+  padding-top: 5%;
+  background-color: #cccccc;
+  padding-bottom: 3%;
+}
+.left-two {
+  padding-left: 35%;
+  padding-right: 2%;
+}
+.right-two {
+  padding-left: 2%;
+}
+.img-two{
+  width: 45%;
+  float: left;
+}
